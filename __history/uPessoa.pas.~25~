@@ -1,0 +1,49 @@
+unit uPessoa;
+
+interface
+
+uses system.SysUtils;
+
+    type
+
+    TPessoa = class private Faltura: real;
+Fpeso:
+real;
+Fsexo:
+Char;
+
+procedure setAltura(const Value: real);
+procedure setPeso(const Value: real);
+procedure setSexo(const Value: Char);
+
+public
+  property altura: real read Faltura write setAltura;
+  property peso: real read Fpeso write setPeso;
+  property sexo: Char read Fsexo write setSexo;
+  end;
+
+implementation
+
+{ TPessoa }
+
+procedure TPessoa.setAltura(const Value: real);
+begin
+  Faltura := Value;
+end;
+
+procedure TPessoa.setPeso(const Value: real);
+begin
+  Fpeso := Value;
+end;
+
+procedure TPessoa.setSexo(const Value: Char);
+begin
+  if Value in ['F', 'M'] then
+    Fsexo := Value
+
+  else
+    raise Exception.Create('Sexo Inválido');
+
+end;
+
+end.

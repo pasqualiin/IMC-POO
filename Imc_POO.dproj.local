@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/04/01 23:15:22.000.104,=E:\Unit1.pas</Transaction>
+    <Transaction>2020/04/27 01:43:48.000.202,=E:\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 14:12:37.000.027,=E:\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 14:21:13.000.403,E:\Unit1.pas=C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\uFrmIndice.pas</Transaction>
+    <Transaction>2020/05/25 14:21:13.000.403,E:\Unit1.dfm=C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\uFrmIndice.dfm</Transaction>
+    <Transaction>2020/05/25 14:21:31.000.410,E:\Project1.dproj=C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\Imc_POO.dproj</Transaction>
+    <Transaction>2020/05/25 14:26:27.000.335,=C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 14:27:08.000.541,C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\Unit1.pas=C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\uPessoa.pas</Transaction>
+    <Transaction>2020/05/25 15:25:26.000.956,=C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 15:25:40.000.988,C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\Unit1.pas=C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\RResultado.pas</Transaction>
+    <Transaction>2020/05/25 15:28:34.000.937,C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\RResultado.pas=C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\uResultado.pas</Transaction>
+    <Transaction>2020/05/25 15:31:57.000.803,=C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\Unit1.pas</Transaction>
+    <Transaction>2020/05/25 15:33:20.000.997,C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\Unit1.pas=C:\Users\guilh\Desktop\Projetos\IMC_AulaPoo\uCalculadora.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,13 @@
+unit uResultado;
+
+interface
+
+type
+  RResultado = record
+   Valor: real;
+   Descricao : real;
+  end;
+
+implementation
+
+end.

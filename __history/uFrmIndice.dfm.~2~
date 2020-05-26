@@ -1,0 +1,112 @@
+object FrmIndice: TFrmIndice
+  Left = 0
+  Top = 0
+  Caption = 'Calculadora IMC'
+  ClientHeight = 346
+  ClientWidth = 485
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 80
+    Top = 139
+    Width = 63
+    Height = 19
+    Caption = 'Altura ...'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 80
+    Top = 184
+    Width = 53
+    Height = 19
+    Caption = 'Peso ...'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 80
+    Top = 232
+    Width = 34
+    Height = 19
+    Caption = 'Sexo'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 485
+    Height = 97
+    Align = alTop
+    Caption = 'Calculadora - Indice Massa Corporal'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    ExplicitWidth = 593
+  end
+  object EdtAltura: TEdit
+    Left = 152
+    Top = 136
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object EdtPeso: TEdit
+    Left = 152
+    Top = 181
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object CmbSexo: TComboBox
+    Left = 152
+    Top = 229
+    Width = 57
+    Height = 21
+    Style = csDropDownList
+    TabOrder = 3
+    Items.Strings = (
+      'F'
+      'M')
+  end
+  object BtnResultado: TButton
+    Left = 60
+    Top = 288
+    Width = 125
+    Height = 42
+    Caption = 'Resultado'
+    TabOrder = 4
+  end
+  object BtnRequisitos: TButton
+    Left = 264
+    Top = 288
+    Width = 125
+    Height = 42
+    Caption = 'Ver Requisitos'
+    TabOrder = 5
+  end
+end

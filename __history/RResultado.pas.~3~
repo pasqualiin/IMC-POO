@@ -1,0 +1,9 @@
+unit RResultado;
+
+interface
+
+type
+RResultado = record;
+implementation
+
+end.
