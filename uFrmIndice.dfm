@@ -66,7 +66,6 @@ object FrmIndice: TFrmIndice
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 593
   end
   object EdtAltura: TEdit
     Left = 152
@@ -86,8 +85,14 @@ object FrmIndice: TFrmIndice
     Left = 152
     Top = 234
     Width = 57
-    Height = 21
+    Height = 24
     Style = csDropDownList
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 3
     Items.Strings = (
       'F'
@@ -100,6 +105,7 @@ object FrmIndice: TFrmIndice
     Height = 42
     Caption = 'Resultado'
     TabOrder = 4
+    OnClick = BtnResultadoClick
   end
   object BtnRequisitos: TButton
     Left = 264
@@ -108,5 +114,6 @@ object FrmIndice: TFrmIndice
     Height = 42
     Caption = 'Ver Requisitos'
     TabOrder = 5
+    OnClick = BtnRequisitosClick
   end
 end

@@ -3,8 +3,10 @@ unit uFrmIndice;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  uFrmRequisitos, uFrmResultado, uPessoa, uCalculadora, uResultado;
 
 type
   TFrmIndice = class(TForm)
@@ -17,6 +19,8 @@ type
     CmbSexo: TComboBox;
     BtnResultado: TButton;
     BtnRequisitos: TButton;
+    procedure BtnRequisitosClick(Sender: TObject);
+    procedure BtnResultadoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,5 +33,49 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFrmIndice.BtnRequisitosClick(Sender: TObject);
+begin
+  try
+    Requisitos := TRequisitos.Create(Self);
+    Requisitos.ShowModal;
+  finally
+    FreeAndNil(Requisitos);
+  end;
+end;
+
+procedure TFrmIndice.BtnResultadoClick(Sender: TObject);
+var
+  pessoa: TPessoa;
+  calcularIMC: TCalculadora;
+  recorde: RResultado;
+begin
+  try
+    try
+      pessoa := TPessoa.Create;
+      pessoa.altura := StrtoFloat(EdtAltura.text);
+      pessoa.peso := StrtoFloat(EdtPeso.text);
+      pessoa.sexo := CmbSexo.text[1];
+
+      calcularIMC := TCalculadora.Create;
+
+      recorde := calcularIMC.Calcular(pessoa);
+
+      FrmResultado := TFrmResultado.Create(Self, pessoa, recorde);
+      FrmResultado.ShowModal;
+    except
+      on E: exception do
+        ShowMessage('Erro ao calcular IMC.' + #13 + 'Erro original:' +
+          E.Message);
+    end;
+  finally
+    if Assigned(pessoa) then
+      FreeAndNil(pessoa);
+    if Assigned(calcularIMC) then
+      FreeAndNil(calcularIMC);
+    if Assigned(FrmResultado) then
+      FreeAndNil(FrmResultado);
+  end;
+end;
 
 end.
